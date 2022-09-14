@@ -175,7 +175,5 @@ if ($_GET["a"] == "invitation_code_account_disable") {
 
 if ($_GET["a"] == "logout") {
     session_destroy();
-    if (!check_login()) {
-        response(1, "登入已失效");
-    }
+    response(1, "登出完成");
 }
